@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 20px auto;
+    animation: pulse 2s infinite;
+}
+
+/* Definindo a animação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #DA291C; /* Cor semelhante ao logo dos Desbravadores */
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #DA291C;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-login {
+    background-color: #DA291C;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-login:hover {
+    background-color: #b91f16;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.signup-link a {
+    color: #DA291C;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-cadastro {
+    background-color: #DA291C;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.btn-cadastro:hover {
+    background-color: #b91f16;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.login-link a {
+    color: #DA291C;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+ /* Estilos para a tela de carregamento */
+ #loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loading-logo {
+    width: 70px; /* Ajuste o tamanho conforme necessário */
+    animation: fadeIn 1.5s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+#loading-text {
+    font-size: 18px;
+    color: #d10000;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

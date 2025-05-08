@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desbravadores - TCC</title>
+  <link rel="stylesheet" href="Ano,Semana.css">
+</head>
+<body>
+  <header>
+    <h1>Clube de Desbravadores</h1>
+    <p>Projeto de TCC sobre Ano Bíblico e Estudo Bíblico Semanal</p>
+    <button id="modo-escuro-toggle">🌙 Alternar Tema</button>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#ano-biblico">Ano Bíblico</a>
+    <a href="#estudo">Estudo Semanal</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo!</h2>
+      <p>Este site faz parte do nosso Trabalho de Conclusão de Curso e apresenta conteúdos sobre o Clube de Desbravadores, com foco no Ano Bíblico e Estudo Bíblico Semanal.</p>
+    </section>
+
+    <section id="ano-biblico">
+      <h2>Ano Bíblico <span class="info">?</span></h2>
+      <input type="text" id="filtro-livro" placeholder="🔍 Buscar livro...">
+      <p>Leitura dividida de março a novembro:</p>
+      <div class="meses">
+        <div class="mes" id="marco"><h3>Março</h3><ul></ul></div>
+        <div class="mes" id="abril"><h3>Abril</h3><ul></ul></div>
+        <div class="mes" id="maio"><h3>Maio</h3><ul></ul></div>
+        <div class="mes" id="junho"><h3>Junho</h3><ul></ul></div>
+        <div class="mes" id="julho"><h3>Julho</h3><ul></ul></div>
+        <div class="mes" id="agosto"><h3>Agosto</h3><ul></ul></div>
+        <div class="mes" id="setembro"><h3>Setembro</h3><ul></ul></div>
+        <div class="mes" id="outubro"><h3>Outubro</h3><ul></ul></div>
+        <div class="mes" id="novembro"><h3>Novembro</h3><ul></ul></div>
+      </div>
+    </section>
+
+    <section id="estudo">
+      <h2>Estudo Bíblico Semanal <span class="info">?</span></h2>
+      <p>Temas divididos por semana:</p>
+      <div id="semanas-estudo" class="quadros"></div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato / Autores <span class="info">?</span></h2>
+      <p>Desenvolvido por Júnior, Victoria e Marcelly para o Colégio Adventista de Engenheiro Coelho - UNASP.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clube de Desbravadores - TCC</p>
+  </footer>
+
+  <div id="modal-estudo" class="modal hidden">
+    <div class="modal-conteudo">
+      <span id="fechar-modal">&times;</span>
+      <div id="conteudo-estudo"></div>
+    </div>
+  </div>
+
+  <script src="Ano,Semana.js"></script>
+</body>
+</html>

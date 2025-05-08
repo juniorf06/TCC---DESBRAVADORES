@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Clube de Desbravadores</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+    <!-- Tela de carregamento -->
+    <div id="loading-screen">
+        <img id="loading-logo" src="imagens/logo.png" alt="Logo do Clube">
+        <p id="loading-text">Carregando...</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo Clube Desbravadores">
+        </div>
+        <h1>Cadastro no Clube de Desbravadores</h1>
+        
+        <!-- Primeira Seção: Cadastro Básico -->
+        <form id="form-cadastro" action="cadastro_usuario.php" method="post">
+            <div class="section" id="section1">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="button" class="btn-next" onclick="showClubSection()">Próximo</button>
+            </div>
+
+            <!-- Segunda Seção: Informações do Clube -->
+            <div class="section" id="section2" style="display: none;">
+                <h2>Informações do Clube</h2>
+                <div class="input-group">
+                    <label for="club_name">Nome do Clube</label>
+                    <input type="text" id="club_name" name="club_name" required>
+                </div>
+                <div class="input-group">
+                    <label for="region">Região</label>
+                    <input type="text" id="region" name="region" required>
+                </div>
+                <div class="input-group">
+                    <label for="association">Associação</label>
+                    <input type="text" id="association" name="association" required>
+                </div>
+                <div class="input-group">
+                    <label for="role">Função no Clube</label>
+                    <select id="role" name="role" required>
+                        <option value="">Selecione a função</option>
+                        <option value="conselheiro">Conselheiro</option>
+                        <option value="capitão">Capitão</option>
+                        <option value="secretário">Secretário</option>
+                        <!-- Adicione outras opções conforme necessário -->
+                    </select>
+                </div>
+                <button type="submit" class="btn-cadastro"><a href="inicial.html">Cadastrar</a></button>
+            </div>
+        </form>
+
+        <p class="login-link">Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+    </div>
+
+    <!-- Referência ao arquivo JavaScript externo -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>

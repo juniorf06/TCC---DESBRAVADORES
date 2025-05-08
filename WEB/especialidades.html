@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style2.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Áreas</h1>
+            <!-- MENU HAMBÚRGUER -->
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+            <!-- MENU LATERAL -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="inicial.html">Início</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="ano_biblico.html">Ano Bíblico</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <aside class="menu">
+                    <ul id="area-list">
+                        <li onclick="mostrarEspecialidades('artes')">Artes e Habilidades Manuais</li>
+                        <li onclick="mostrarEspecialidades('ciencia')">Ciências e Saúde</li>
+                        <li onclick="mostrarEspecialidades('esportes')">Esportes e Atividades Físicas</li>
+                        <li onclick="mostrarEspecialidades('natureza')">Natureza e Meio Ambiente</li>
+                    </ul>
+                </aside>
+                <main class="conteudo">
+                    <h2 id="titulo-area">Selecione uma área</h2>
+                    <ul id="especialidades-list"></ul>
+                </main>
+            </div>
+    </div>
+
+    
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
