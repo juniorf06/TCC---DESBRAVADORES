@@ -1,0 +1,23 @@
+{
+  "name": "tcc---desbravadores",
+  "version": "1.0.0",
+  "description": "MARCELLY,JÚNIOR,VICTÓRIA",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorf06/TCC---DESBRAVADORES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniorf06/TCC---DESBRAVADORES/issues"
+  },
+  "homepage": "https://github.com/juniorf06/TCC---DESBRAVADORES#readme",
+  "dependencies": {
+    "vite": "^6.3.5"
+  }
+}
